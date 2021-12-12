@@ -18,7 +18,7 @@ on.exit(unlink(filename))
 
 img <- png::readPNG(filename)
 
-matrix <- img[,,1]
+matrix <- matrix(img, byrow=TRUE, nrow=nrow(img))
 
 col_num <- 1:ncol(matrix)
 row_num <- 1:nrow(matrix)
@@ -33,7 +33,6 @@ matrix_table <- as_tibble(matrix) %>%
   mutate(row_id = row_id) %>%
   pivot_longer(-row_id, names_to ="col_id", values_to = "pixel_value") %>%
   mutate_if(is.integer, as.double) %>%
-  mutate(filename = basename(tmpdir)) %>%
   mutate(.ci = 0) %>%
   ctx$addNamespace() %>%
   ctx$save()
