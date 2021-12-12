@@ -21,7 +21,7 @@ img <- png::readPNG(filename)
 matrix <- img[,,1]
 
 col_num <- 1:ncol(matrix)
-row_num <- 1:nrow(martix)
+row_num <- 1:nrow(matrix)
 
 col_id <-sprintf(paste0("c%0", max(nchar(as.character(col_num))), "d"), col_num)
 row_id <-sprintf(paste0("r%0", max(nchar(as.character(row_num))), "d"), row_num)
