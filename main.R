@@ -16,7 +16,7 @@ filename = tempfile()
 writeBin(ctx$client$fileService$download(docId), filename)
 on.exit(unlink(filename))
 
-img <- png::readPNG(filename)
+img <- png::readPNG(filename, native = TRUE)
 
 matrix <- matrix(img, byrow=TRUE, nrow=nrow(img))
 
