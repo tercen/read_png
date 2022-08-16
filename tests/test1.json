@@ -14,5 +14,6 @@
   "xAxis": "",
   "generatedOn": "08/16/2022 10:07:03 AM 2022",
   "version": "",
-  "inputFileUris": ["Rlogo.png"]
+  "inputFileUris": ["Rlogo.png"],
+  "relTol": 1e-10
 }
