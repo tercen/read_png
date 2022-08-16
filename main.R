@@ -33,6 +33,9 @@ matrix_table <- as_tibble(matrix) %>%
   mutate(row_id = row_id) %>%
   pivot_longer(-row_id, names_to ="col_id", values_to = "pixel_value") %>%
   mutate_if(is.integer, as.double) %>%
-  mutate(.ci = 0) %>%
-  ctx$addNamespace() %>%
+  mutate(.ci = 0L) %>%
+  ctx$addNamespace() 
+
+
+matrix_table %>%
   ctx$save()
