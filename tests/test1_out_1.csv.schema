@@ -1,0 +1,25 @@
+{
+  "kind": "TableSchema",
+  "columns": [
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.row_id",
+      "type": "string"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.col_id",
+      "type": "string"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": "ds0.pixel_value",
+      "type": "double"
+    },
+    {
+      "kind": "ColumnSchema",
+      "name": ".ci",
+      "type": "int32"
+    }
+  ]
+}
