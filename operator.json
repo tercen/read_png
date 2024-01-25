@@ -1,8 +1,14 @@
 {
   "name": "PNG",
   "description": "reads a PNG file.",
-  "tags": ["import", "image"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/read_png_operator"],
+  "tags": [
+    "import"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/read_png_operator"
+  ],
   "properties": []
 }
