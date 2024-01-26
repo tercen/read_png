@@ -1,6 +1,6 @@
 {
   "name": "PNG",
-  "description": "reads a PNG file.",
+  "description": "Imports a PNG file.",
   "tags": [
     "import"
   ],
